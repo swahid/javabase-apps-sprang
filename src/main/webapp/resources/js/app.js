@@ -1,3 +1,18 @@
+/*
+ * Make this angular js application with admin LTE Theme
+ * Declare folowing angular module
+ */
+//----------------- Start Of Angular js part -----------------
+var sprang = angular.module('sprang',[]);
+
+
+
+
+
+//----------------- End Of Angular js part -------------------
+
+//----------------- Start Of AdminLTE js part ----------------
+
 /*! AdminLTE app.js
  * ================
  * Main JS application file for AdminLTE v2. This file
@@ -744,3 +759,5 @@ function _init() {
     });
   };
 }(jQuery));
+
+//----------------- End Of AdminLTE js part ----------------

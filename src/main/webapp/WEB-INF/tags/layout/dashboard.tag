@@ -13,7 +13,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IssueTracking System</title>
+    <title>Spring Angular js app</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -33,10 +33,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- jQuery 2.1.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Add angular js depednecy in admin lte theme -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="resources/js/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="resources/js/app.min.js"></script>
+    <!-- AdminLTE App with angular js app-->
+    <script src="resources/js/app.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,7 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-<body class="hold-transition skin-purple-light sidebar-collapse">
+<body ng-app="sprang" class="hold-transition skin-purple-light sidebar-collapse ng-cloak">
     <c:url var="index" value="/" />
     <div class="wrapper">
 
