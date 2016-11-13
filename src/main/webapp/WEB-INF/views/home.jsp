@@ -4,11 +4,14 @@
 		<title>Dashboard Spring Angular js app</title>
 		<!-- Home Controller js -->
     	<script src="resources/js/controller/homeController.js"></script>
+    	<script src="resources/js/controller/homeController2.js"></script>
 		<!-- Home Service js -->
     	<script src="resources/js/service/homeService.js"></script>
+    	<script src="resources/js/service/homeService2.js"></script>
 	</jsp:attribute>
 	
 	<jsp:body>
+	<div ng-view></div>
 	<div ng-controller="homeController as home">
 	<h1>welcome {{home.user}} </h1>
 	<p>This is sample project Spring MVC Spring security and  Hibernate for mysql connectivity</p>

@@ -34,7 +34,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- jQuery 2.1.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Add angular js depednecy in admin lte theme -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="resources/js/bootstrap.min.js"></script>
     <!-- AdminLTE App with angular js app-->
@@ -113,10 +114,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="profile" class="btn btn-default btn-flat">Profile</a>
+                      <a href="#/profile" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href='<c:url value="/logout"></c:url>' class="btn btn-default btn-flat">Sign out</a>
+                      <a href="#/logout" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>

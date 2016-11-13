@@ -3,8 +3,21 @@
  * Declare folowing angular module
  */
 //----------------- Start Of Angular js part -----------------
-var sprang = angular.module('sprang',[]);
+var sprang = angular.module('sprang',['ngRoute']);
 
+// ---------------- start of angrular Page Raouting ----------
+sprang.config(function($routeProvider,$locationProvider) {
+    $routeProvider
+    .when("/profile", {
+        templateUrl : "404.js",
+        controller : 'homeController2'
+    })
+    .when("/logout", {
+        templateUrl : "home2",
+        controller : 'homeController2'
+    })
+});
+// ---------------- end of angrular Page Raouting ------------
 
 
 
