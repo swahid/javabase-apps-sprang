@@ -1,8 +1,8 @@
 'use strict';
 
-sprang.factory('homeService2', ['$http', '$q',  function($http, $q){
+sprang.factory('indexService', ['$http', '$q',  function($http, $q){
 	
-	var REST_SERVICE_URI= 'http://localhost:8080/sprang/home2/';
+	var REST_SERVICE_URI= 'http://localhost:8080/sprang/';
 	
 	 var factory = {
 		        fetchAllUsers: fetchAllUsers

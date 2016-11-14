@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
+@RequestMapping(value = "/home")
 public class HomeController {
 	
 	private static final Logger log = LoggerFactory.getLogger(HomeController.class);
@@ -30,7 +31,7 @@ public class HomeController {
     @Autowired
     HttpSession response;
 	
-	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
 		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();

@@ -1,11 +1,11 @@
 'use strict';
 
-sprang.controller('homeController2', ['$scope', 'homeService2', function($scope, homeService2) {
+sprang.controller('indexController', ['$scope', 'indexService', function($scope, indexService) {
 	var me  = this;
-	me.user = 'Wahid ';
+	me.user = 'Saurav Wahid ';
 	
 	function fetchAllUsers(){
-		homeService2.fetchAllUsers()
+		indexService.fetchAllUsers()
             .then(
             function(d) {
                 self.users = d;

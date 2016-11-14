@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController2 {
+@RequestMapping(value = "/")
+public class IndexController {
 	
-	private static final Logger log = LoggerFactory.getLogger(HomeController2.class);
+	private static final Logger log = LoggerFactory.getLogger(IndexController.class);
 	
-	
-	@RequestMapping(value = { "/home2" }, method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String home() {
-		log.info("Home 2 call");
-		return "home2";
+		log.info("Index Controller");
+		return "index";
 	}
 	
 }

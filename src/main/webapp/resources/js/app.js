@@ -6,16 +6,17 @@
 var sprang = angular.module('sprang',['ngRoute']);
 
 // ---------------- start of angrular Page Raouting ----------
-sprang.config(function($routeProvider,$locationProvider) {
+sprang.config(function($routeProvider, $locationProvider) {
     $routeProvider
-    .when("/profile", {
-        templateUrl : "404.js",
-        controller : 'homeController2'
+    .when("/home", {
+        templateUrl : "home",
+        controller : 'homeController'
     })
-    .when("/logout", {
-        templateUrl : "home2",
-        controller : 'homeController2'
+    .when("/404", {
+    	templateUrl : "404"
     })
+ // use the HTML5 History API
+    $locationProvider.html5Mode(true);
 });
 // ---------------- end of angrular Page Raouting ------------
 

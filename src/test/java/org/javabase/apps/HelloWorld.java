@@ -1,4 +1,4 @@
-package org.javabase.mvc;
+package org.javabase.apps;
 
 public class HelloWorld {
 
