@@ -1,8 +1,25 @@
 'use strict';
 
-sprang.factory('indexService', ['$http', '$q',  function($http, $q){
+sprang.factory('indexService', ['$http', '$q', '$location', function($http, $q, $location){
 	
-	var REST_SERVICE_URI= 'http://localhost:8080/sprang/';
+	var REST_SERVICE_URI= $location.absUrl();
+	REST_SERVICE_URI = getProjectName(REST_SERVICE_URI);
+	
+	console.log(REST_SERVICE_URI);
+	
+	function getProjectName(url){
+		var index,int;
+		for (int = 0; int <3; int++) {
+			 index = url.indexOf("/");
+			 url= url.substring(index+1);
+		}
+		var index = url.indexOf("/");
+		url = url.slice(0, index);
+		
+		return url;
+	}
+	
+	
 	
 	 var factory = {
 		        fetchAllUsers: fetchAllUsers

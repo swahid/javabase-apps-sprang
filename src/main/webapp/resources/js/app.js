@@ -8,6 +8,10 @@ var sprang = angular.module('sprang',['ngRoute']);
 // ---------------- start of angrular Page Raouting ----------
 sprang.config(function($routeProvider, $locationProvider) {
     $routeProvider
+    .when("/", {
+    	templateUrl : "home",
+    	controller : 'indexController'
+    })
     .when("/home", {
         templateUrl : "home",
         controller : 'homeController'
