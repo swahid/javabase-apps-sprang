@@ -11,7 +11,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
   <head>
-    <base href="<c:url value='/' />">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
@@ -46,6 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="resources/css/error.css" rel="stylesheet"></link>
     <jsp:invoke fragment="header"/>
   </head>
   <!--
@@ -86,7 +86,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
           </a>
           <!-- Navbar Right Menu -->
@@ -96,7 +96,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- User Account Menu -->
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                   <!-- The user image in the navbar-->
                   <img src="resources/images/avatar.png" class="user-image" alt="User Image">
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
@@ -114,10 +114,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="home" class="btn btn-default btn-flat">Profile</a>
+                      <a href="#/home" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="404" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="#/404" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -138,7 +138,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="pull-left info">
               <p>${user.firstName} ${user.lastName}</p>
               <!-- Status -->
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+              <a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
 
@@ -157,10 +157,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="sidebar-menu">
             <li class="active"><a href="${index}"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
 <!--             <li class="treeview">
-              <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <a href="javascript:void(0)"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
+                <li><a href="javascript:void(0)">Link in level 2</a></li>
+                <li><a href="javascript:void(0)">Link in level 2</a></li>
               </ul>
             </li> -->
           </ul><!-- /.sidebar-menu -->

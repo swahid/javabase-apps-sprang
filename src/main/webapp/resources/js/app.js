@@ -19,8 +19,9 @@ sprang.config(function($routeProvider, $locationProvider) {
     .when("/404", {
     	templateUrl : "404"
     })
+    $routeProvider.otherwise("/")
  // use the HTML5 History API
-    $locationProvider.html5Mode(true);
+//    $locationProvider.html5Mode(true);
 });
 // ---------------- end of angrular Page Raouting ------------
 
